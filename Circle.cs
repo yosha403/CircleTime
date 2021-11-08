@@ -18,9 +18,13 @@ namespace CircleTime
             count = count + 1;
         }
 
+        public Circle()
+        {
+        }
+
         public double CalculateCircumference(double radius)
         {
-            double circumference =Math.Round(2 * Math.PI * radius,2);
+            double circumference =Math.Round(2 * Math.PI * radius,1);
             return circumference;
         }
         public double CalculateArea(double radius)
